@@ -1,11 +1,11 @@
 <?php get_header(); ?>
 
 <?php
-  $title = 'Soluciones arquitectónicas en vidrio y aluminio'; 
-  $subtitle = 'Más de 10 años combinando precisión, calidad y estilo para transformar cada espacio con soluciones personalizadas.';
-  $location = 'Barranquilla y la Región Caribe';
-  $hasButton = false;
-  $heroPage = false;
+  $title = get_the_title(); 
+  $subtitle = get_field('subtitulo_hero') ?: 'Subtítulo por defecto si no está definido';
+  $location = get_field('locaciones') ?: 'Barranquilla y la Región Caribe';
+  $hasButton = get_field('boton_de_accion') ? true : false;
+  $heroPage = get_field('homepage') ? true : false;;
 
   if ( locate_template( 'template-parts/hero.php', true, false ) ) {
     render_hero($title, $subtitle, $location, $hasButton, $heroPage);
