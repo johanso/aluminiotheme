@@ -72,7 +72,7 @@
       'title' => 'Puertas en Aluminio',
       'description' => 'Diseñamos puertas de aluminio seguras y con estilo para cualquier entrada.',
       'image' => get_template_directory_uri() . '/assets/puertas.png',
-      'url' => '#',
+      'url' => get_site_url() . '/puertas-en-aluminio',
     ],
     [
       'id' => 'service3',
