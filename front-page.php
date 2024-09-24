@@ -79,7 +79,7 @@
       'title' => 'Barandas en Acero y Aluminio',
       'description' => 'Barandas resistentes y elegantes en acero y aluminio para escaleras y balcones.',
       'image' => get_template_directory_uri() . '/assets/barandas.png',
-      'url' => '#',
+      'url' => get_site_url() . '/barandas-en-acero-aluminio',
     ],
     [
       'id' => 'service4',
