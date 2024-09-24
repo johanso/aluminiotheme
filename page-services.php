@@ -107,6 +107,7 @@
       [ 'url' => 'https://res.cloudinary.com/dcplixyte/image/upload/v1724188169/proyectosnelson/ywocig7wy5kullwj90ko.jpg', 'alt' =>  'Image 54' ],
       [ 'url' => 'https://res.cloudinary.com/dcplixyte/image/upload/v1724188169/proyectosnelson/nxdsgl9xb8thjwnphpfy.jpg', 'alt' =>  'Image 55' ],
       [ 'url' => 'https://res.cloudinary.com/dcplixyte/image/upload/v1724188169/proyectosnelson/tzymi1n3f9maeoxx4ozv.jpg', 'alt' =>  'Image 56' ],
+      [ 'url' => 'https://res.cloudinary.com/dcplixyte/image/upload/v1727180862/proyectosnelson/57_drn33q.jpg', 'alt' =>  'Instalación de vidrio templado a pantallas led' ],
     ];
 
     if ( locate_template( 'template-parts/gallery.php', true, false ) ) {
