@@ -51,6 +51,13 @@
     $subtitle = "Nuestros Proyectos Hablan por Sí Mismos";
     $description = "Aquí te presentamos una selección de nuestros trabajos recientes, donde cada proyecto refleja nuestra dedicación a la calidad y el detalle.";
     $gallery_images = [
+      [ 'url' => 'https://res.cloudinary.com/dcplixyte/image/upload/v1727951925/proyectosnelson/diviones-oficina-03_wfyqcr.jpg', 'alt' =>  'Diviones de Oficinas 03' ],
+      [ 'url' => 'https://res.cloudinary.com/dcplixyte/image/upload/v1727951990/proyectosnelson/diviones-oficina-02_wqppip.jpg', 'alt' =>  'Diviones de Oficinas 02' ],
+      [ 'url' => 'https://res.cloudinary.com/dcplixyte/image/upload/v1727951808/proyectosnelson/diviones-oficina-01_h21zpo.jpg', 'alt' =>  'Diviones de Oficinas 01' ],
+      [ 'url' => 'https://res.cloudinary.com/dcplixyte/image/upload/v1727951773/proyectosnelson/diviones-bano2_tqiwwa.jpg', 'alt' =>  'Diviones de Baño 2' ],
+      [ 'url' => 'https://res.cloudinary.com/dcplixyte/image/upload/v1727951709/proyectosnelson/diviones-bano_qpbk26.jpg', 'alt' =>  'Diviones de Baño' ],
+      [ 'url' => 'https://res.cloudinary.com/dcplixyte/image/upload/v1727951854/proyectosnelson/gabinetes-acrilico-cocina_icylqa.jpg', 'alt' =>  'Gabinetes de Cocina PVC Alumnio' ],
+      [ 'url' => 'https://res.cloudinary.com/dcplixyte/image/upload/v1727952036/proyectosnelson/cerramientos-alumnio-01_p6f5ra.jpg', 'alt' =>  'Cerramientos Alumnio' ],
       [ 'url' => 'https://res.cloudinary.com/dcplixyte/image/upload/v1724188174/proyectosnelson/kihsp8fizrvs7heldtpf.jpg', 'alt' =>  'Image 1' ],
       [ 'url' => 'https://res.cloudinary.com/dcplixyte/image/upload/v1724188175/proyectosnelson/svvyuxykczfjrdaepjhe.jpg', 'alt' =>  'Image 2' ],
       [ 'url' => 'https://res.cloudinary.com/dcplixyte/image/upload/v1724188174/proyectosnelson/snvwpczeted9k0xfx9zw.jpg', 'alt' =>  'Image 3' ],
