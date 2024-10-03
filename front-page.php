@@ -86,7 +86,7 @@
       'title' => 'Divisiones de Baño y Oficina',
       'description' => 'Divisiones en vidrio y aluminio que optimizan y embellecen tus espacios.',
       'image' => get_template_directory_uri() . '/assets/divisiones-bano.png',
-      'url' => '#',
+      'url' => get_site_url() . '/divisiones-de-bano-oficina-vidrio-acrilico',
     ],
     [
       'id' => 'service5',
