@@ -13,18 +13,36 @@
 ?>
 
 <?php
+  // Obtener las 7 imágenes de los campos personalizados ACF
   $images = [
-    ['src' => 'https://res.cloudinary.com/dcplixyte/image/upload/v1726133918/proyectosnelson/ventanas/ventana-alumnio-3_ojuixo.jpg', 'alt' => 'vantana alumnio 1', 'width' => 600, 'height' => 400 ],
-    ['src' => 'https://res.cloudinary.com/dcplixyte/image/upload/v1726133917/proyectosnelson/ventanas/ventana-alumnio-6_uuzosf.jpg', 'alt' => 'vantana alumnio 2', 'width' => 600, 'height' => 400 ],
-    ['src' => 'https://res.cloudinary.com/dcplixyte/image/upload/v1726133917/proyectosnelson/ventanas/ventana-alumnio-5_ovgzst.jpg', 'alt' => 'vantana alumnio 3', 'width' => 600, 'height' => 400 ],
-    ['src' => 'https://res.cloudinary.com/dcplixyte/image/upload/v1726133917/proyectosnelson/ventanas/ventana-alumnio-1_jrhihs.jpg', 'alt' => 'vantana alumnio 4', 'width' => 600, 'height' => 400 ],
-    ['src' => 'https://res.cloudinary.com/dcplixyte/image/upload/v1726133917/proyectosnelson/ventanas/ventana-alumnio-7_crlzfp.jpg', 'alt' => 'vantana alumnio 5', 'width' => 600, 'height' => 400 ],
-    ['src' => 'https://res.cloudinary.com/dcplixyte/image/upload/v1726133917/proyectosnelson/ventanas/ventana-alumnio-4_ba0xa4.jpg', 'alt' => 'vantana alumnio 6', 'width' => 600, 'height' => 400 ],
-    ['src' => 'https://res.cloudinary.com/dcplixyte/image/upload/v1726133917/proyectosnelson/ventanas/ventana-alumnio-2_wntfgz.jpg', 'alt' => 'vantana alumnio 7', 'width' => 600, 'height' => 400 ],
+    get_field('imagen_1'),
+    get_field('imagen_2'),
+    get_field('imagen_3'),
+    get_field('imagen_4'),
+    get_field('imagen_5'),
+    get_field('imagen_6'),
+    get_field('imagen_7'),
   ];
 
-  if (locate_template('template-parts/slider-services.php', true, false)) {
-    render_sliderservice_section($images);
+  // Verificar si se cargaron todas las imágenes
+  $carousel_images = [];
+  foreach ($images as $image) {
+    if ($image) {
+      $carousel_images[] = [
+        'src' => $image['url'], // URL de la imagen
+        'alt' => $image['alt'], // Texto alternativo
+        'width' => $image['width'], // Ancho de la imagen
+        'height' => $image['height'], // Altura de la imagen
+      ];
+    }
+  }
+
+  // Verificar si hay imágenes y mostrar el carrusel
+  if (!empty($carousel_images) && locate_template('template-parts/slider-services.php', true, false)) {
+    // Pasar las imágenes a la plantilla del slider
+    render_sliderservice_section($carousel_images);
+  } else {
+    echo '<p>No se han encontrado imágenes para el carrusel.</p>';
   }
 ?>
 
