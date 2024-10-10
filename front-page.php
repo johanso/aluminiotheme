@@ -100,7 +100,7 @@
       'title' => 'Vidrio Templado y Laminado',
       'description' => 'Soluciones en vidrio templado y laminado, seguras y elegantes.',
       'image' => get_template_directory_uri() . '/assets/vidrio-templado.png',
-      'url' => '#',
+      'url' => get_site_url() . '/vidrio-templado-laminado/',
     ],
     [
       'id' => 'service7',
