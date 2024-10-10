@@ -13,6 +13,22 @@
 ?>
 
 <?php
+  $images = [
+    ['src' => 'https://res.cloudinary.com/dcplixyte/image/upload/v1726133918/proyectosnelson/ventanas/ventana-alumnio-3_ojuixo.jpg', 'alt' => 'vantana alumnio 1', 'width' => 600, 'height' => 400 ],
+    ['src' => 'https://res.cloudinary.com/dcplixyte/image/upload/v1726133917/proyectosnelson/ventanas/ventana-alumnio-6_uuzosf.jpg', 'alt' => 'vantana alumnio 2', 'width' => 600, 'height' => 400 ],
+    ['src' => 'https://res.cloudinary.com/dcplixyte/image/upload/v1726133917/proyectosnelson/ventanas/ventana-alumnio-5_ovgzst.jpg', 'alt' => 'vantana alumnio 3', 'width' => 600, 'height' => 400 ],
+    ['src' => 'https://res.cloudinary.com/dcplixyte/image/upload/v1726133917/proyectosnelson/ventanas/ventana-alumnio-1_jrhihs.jpg', 'alt' => 'vantana alumnio 4', 'width' => 600, 'height' => 400 ],
+    ['src' => 'https://res.cloudinary.com/dcplixyte/image/upload/v1726133917/proyectosnelson/ventanas/ventana-alumnio-7_crlzfp.jpg', 'alt' => 'vantana alumnio 5', 'width' => 600, 'height' => 400 ],
+    ['src' => 'https://res.cloudinary.com/dcplixyte/image/upload/v1726133917/proyectosnelson/ventanas/ventana-alumnio-4_ba0xa4.jpg', 'alt' => 'vantana alumnio 6', 'width' => 600, 'height' => 400 ],
+    ['src' => 'https://res.cloudinary.com/dcplixyte/image/upload/v1726133917/proyectosnelson/ventanas/ventana-alumnio-2_wntfgz.jpg', 'alt' => 'vantana alumnio 7', 'width' => 600, 'height' => 400 ],
+  ];
+
+  if (locate_template('template-parts/slider-services.php', true, false)) {
+    render_sliderservice_section($images);
+  }
+?>
+
+<?php
   $title = "Sobre Nosotros";
   $subtitle = "Expertos en Soluciones Arquitectónicas en Vidrio y Aluminio";
   $content = [
