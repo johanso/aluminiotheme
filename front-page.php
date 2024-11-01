@@ -127,7 +127,7 @@
       'title' => 'Portones y Cerramientos en Aluminio',
       'description' => 'Fabricamos portones y cerramientos seguros y personalizados en aluminio.',
       'image' => get_template_directory_uri() . '/assets/portones.png',
-      'url' => '#',
+      'url' => get_site_url() . '/portones-y-cerramientos/',
     ],
     [
       'id' => 'service6',
