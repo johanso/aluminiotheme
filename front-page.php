@@ -127,14 +127,14 @@
       'title' => 'Portones y Cerramientos en Aluminio',
       'description' => 'Fabricamos portones y cerramientos seguros y personalizados en aluminio.',
       'image' => get_template_directory_uri() . '/assets/portones.png',
-      'url' => get_site_url() . '/portones-y-cerramientos/',
+      'url' => get_site_url() . '/portones-y-cerramientos',
     ],
     [
       'id' => 'service6',
       'title' => 'Vidrio Templado y Laminado',
       'description' => 'Soluciones en vidrio templado y laminado, seguras y elegantes.',
       'image' => get_template_directory_uri() . '/assets/vidrio-templado.png',
-      'url' => get_site_url() . '/vidrio-templado-laminado/',
+      'url' => get_site_url() . '/vidrio-templado-laminado',
     ],
     [
       'id' => 'service7',
