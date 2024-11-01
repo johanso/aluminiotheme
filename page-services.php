@@ -50,42 +50,42 @@
           </h3>
           <div class="border-b border-gray-300 py-4">
             <a href='<?= get_site_url() . "./ventaneria-en-aluminio" ?>' class="flex items-center gap-2">
-              <img src='<?= get_template_directory_uri() . "./assets/ventana.png" ?>' class="w-8 h-8" alt="Ventanería Aluminio">
+              <img src='<?= get_template_directory_uri() . "/assets/ventana.png" ?>' class="w-8 h-8" alt="Ventanería Aluminio">
               <span class="ml-4 text-lg font-semibold">Ventanería en Aluminio</span>
             </a>
           </div>
           <div class="border-b border-gray-300 py-4">
             <a href='<?= get_site_url() . "./puertas-en-aluminio" ?>' class="flex items-center gap-2">
-              <img src='<?= get_template_directory_uri() . "./assets/puertas.png" ?>' class="w-8 h-8"  alt="Puertas Aluminio">
+              <img src='<?= get_template_directory_uri() . "/assets/puertas.png" ?>' class="w-8 h-8"  alt="Puertas Aluminio">
               <span class="ml-4 text-lg font-semibold">Puertas en Aluminio</span>
             </a>
           </div>
           <div class="border-b border-gray-300 py-4">
             <a href='<?= get_site_url() . "./barandas-en-acero-aluminio" ?>' class="flex items-center gap-2">
-              <img src='<?= get_template_directory_uri() . "./assets/barandas.png" ?>' class="w-8 h-8"  alt="Barandas Aluminio">
+              <img src='<?= get_template_directory_uri() . "/assets/barandas.png" ?>' class="w-8 h-8"  alt="Barandas Aluminio">
               <span class="ml-4 text-lg font-semibold">Barandas en Acero y Aluminio</span>
             </a>
           </div>
           <div class="border-b border-gray-300 py-4">
             <a href='<?= get_site_url() . "./divisiones-de-bano-oficina-vidrio-acrilico" ?>' class="flex items-center gap-2">
-              <img src='<?= get_template_directory_uri() . "./assets/divisiones-bano.png" ?>' class="w-8 h-8"  alt="Divisiones Oficina">
+              <img src='<?= get_template_directory_uri() . "/assets/divisiones-bano.png" ?>' class="w-8 h-8"  alt="Divisiones Oficina">
               <span class="ml-4 text-lg font-semibold">Divisiones de Baño y Oficina</span>
             </a>
           </div>
           <div class="border-b border-gray-300 py-4">
             <a href='<?= get_site_url() . "./portones-y-cerramientos" ?>' class="flex items-center gap-2">
-              <img src='<?= get_template_directory_uri() . "./assets/portones.png" ?>' class="w-8 h-8"  alt="Portones Aluminio">
+              <img src='<?= get_template_directory_uri() . "/assets/portones.png" ?>' class="w-8 h-8"  alt="Portones Aluminio">
               <span class="ml-4 text-lg font-semibold">Portones y Cerramientos en Aluminio</span>
             </a>
           </div>
           <div class="border-b border-gray-300 py-4">
             <a href='<?= get_site_url() . "./vidrio-templado-laminado" ?>' class="flex items-center gap-2">
-              <img src='<?= get_template_directory_uri() . "./assets/vidrio-templado.png" ?>' class="w-8 h-8"  alt="Vidrio Templado">
+              <img src='<?= get_template_directory_uri() . "/assets/vidrio-templado.png" ?>' class="w-8 h-8"  alt="Vidrio Templado">
               <span class="ml-4 text-lg font-semibold">Vidrio Templado y Laminado</span>
             </a>
           </div>
           <div class="flex items-center gap-2 border-b border-gray-300 py-4">
-            <img src='<?= get_template_directory_uri() . "./assets/building.png" ?>' class="w-8 h-8"  alt="Fachadas Flotantes">
+            <img src='<?= get_template_directory_uri() . "/assets/building.png" ?>' class="w-8 h-8"  alt="Fachadas Flotantes">
             <span class="ml-4 text-lg font-semibold">Fachadas Flotantes</span>
           </div>
         </div>
