@@ -830,6 +830,14 @@ ol {
   top: -1rem;
 }
 
+.top-0\.5 {
+  top: 0.125rem;
+}
+
+.-top-0\.5 {
+  top: -0.125rem;
+}
+
 .-z-10 {
   z-index: -10;
 }
@@ -1144,6 +1152,10 @@ ol {
 
 .items-center {
   align-items: center;
+}
+
+.items-baseline {
+  align-items: baseline;
 }
 
 .justify-center {

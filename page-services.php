@@ -45,8 +45,8 @@
       </div>
       <aside class="mt-10 lg:mt-0 relative lg:flex lg:basis-80">
         <div class="lg:sticky lg:top-20">
-          <h3 class="flex items-center gap-2 text-xxl uppercase font-semibold">
-            <span class="text-xxl uppercase font-regular font-serif">::</span> Otros servicios
+          <h3 class="flex items-baseline gap-2 text-xxl uppercase font-bold">
+            <span class="relative -top-0.5 text-xxl uppercase font-regular font-serif">::</span> Otros servicios
           </h3>
           <div class="border-b border-gray-300 py-4">
             <a href='<?= get_site_url() . "./ventaneria-en-aluminio" ?>' class="flex items-center gap-2">
