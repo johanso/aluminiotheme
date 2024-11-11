@@ -35,26 +35,44 @@
   }
   add_action('after_setup_theme', 'theme_support');
 
-class Tailwind_Nav_Walker extends Walker_Nav_Menu {
-  function start_el(&$output, $item, $depth = 0, $args = null, $id = 0) {
-    $classes = 'relative text-black hover:text-black/85 cursor-pointer md:text-sm lg:text-base';
-    $output .= sprintf(
-      '<a href="%s" class="%s">%s</a>',
-      esc_url($item->url),
-      esc_attr($classes),
-      esc_html($item->title)
-    );
+  class Tailwind_Nav_Walker extends Walker_Nav_Menu {
+    function start_el(&$output, $item, $depth = 0, $args = null, $id = 0) {
+      $classes = 'relative text-black hover:text-black/85 cursor-pointer md:text-sm lg:text-base';
+      $output .= sprintf(
+        '<a href="%s" class="%s">%s</a>',
+        esc_url($item->url),
+        esc_attr($classes),
+        esc_html($item->title)
+      );
+    }
   }
-}
 
-class Tailwind_NavMobile_Walker extends Walker_Nav_Menu {
-  function start_el(&$output, $item, $depth = 0, $args = null, $id = 0) {
-    $classes = 'relative text-black hover:text-black/85 cursor-pointer md:text-sm lg:text-base after:content-[""] after:absolute after:left-0 after:w-full after:h-px after:top-9 after:bg-[#f1f1f1]';
-    $output .= sprintf(
-      '<a href="%s" class="%s">%s</a>',
-      esc_url($item->url),
-      esc_attr($classes),
-      esc_html($item->title)
-    );
+  class Tailwind_NavMobile_Walker extends Walker_Nav_Menu {
+    function start_el(&$output, $item, $depth = 0, $args = null, $id = 0) {
+      $classes = 'relative text-black hover:text-black/85 cursor-pointer md:text-sm lg:text-base after:content-[""] after:absolute after:left-0 after:w-full after:h-px after:top-9 after:bg-[#f1f1f1]';
+      $output .= sprintf(
+        '<a href="%s" class="%s">%s</a>',
+        esc_url($item->url),
+        esc_attr($classes),
+        esc_html($item->title)
+      );
+    }
   }
-}
+
+
+  function custom_gallery_post_type() {
+    register_post_type('gallery_image', [
+        'labels' => [
+            'name' => __('Galería'),
+            'singular_name' => __('Imagen de Galería'),
+        ],
+        'public' => true,
+        'supports' => ['title', 'thumbnail'], // Habilitar imágenes destacadas
+        'menu_icon' => 'dashicons-format-gallery',
+    ]);
+  }
+  add_action('init', 'custom_gallery_post_type');
+
+
+  add_theme_support('post-thumbnails', ['gallery_image']);
+
