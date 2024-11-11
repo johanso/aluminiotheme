@@ -240,6 +240,9 @@
     ['text' => 'Vidrio templado'],
     ['text' => 'Barandillas'],
     ['text' => 'Diseños en vidrio'],
+    ['text' => 'Pérgolas en aluminio'],
+    ['text' => 'Techos corredizo policarbonato'],
+    ['text' => 'Espejos flotados'],
   ];
 
   if ( locate_template( 'template-parts/banner-contact.php', true, false ) ) {
