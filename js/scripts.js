@@ -83,3 +83,13 @@ const contactFormSelect = () => {
     }
   });
 }
+
+
+function scrollToAnchorGallery() {
+  const target = document.getElementById('galeria');
+  const targetPosition = target.getBoundingClientRect().top + window.pageYOffset;
+  window.scrollTo({
+      top: targetPosition,
+      behavior: 'smooth'
+  });
+}
